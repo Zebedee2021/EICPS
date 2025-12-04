@@ -1,38 +1,21 @@
 (function () {
-  const LANG_KEY = "bit_iusepn_lang";
+  const LANG_KEY = "eicps_lang";
 
-  function applyLang(lang) {
-    const zhElems = document.querySelectorAll(".lang-zh");
-    const enElems = document.querySelectorAll(".lang-en");
+  function setLang(lang) {
+    const body = document.body;
     const btns = document.querySelectorAll(".lang-btn");
 
     if (lang === "en") {
-      zhElems.forEach(el => {
-        el.classList.remove("show", "block");
-      });
-      enElems.forEach(el => {
-        // 块级和行内混合：h/p 用 block，span/a 用 show 一并处理即可
-        if (["H1","H2","H3","P","LI","DIV"].includes(el.tagName)) {
-          el.classList.add("block");
-        } else {
-          el.classList.add("show");
-        }
-      });
+      body.classList.remove("lang-zh");
+      body.classList.add("lang-en");
     } else {
-      enElems.forEach(el => {
-        el.classList.remove("show", "block");
-      });
-      zhElems.forEach(el => {
-        if (["H1","H2","H3","P","LI","DIV"].includes(el.tagName)) {
-          el.classList.add("block");
-        } else {
-          el.classList.add("show");
-        }
-      });
+      body.classList.remove("lang-en");
+      body.classList.add("lang-zh");
     }
 
     btns.forEach(btn => {
-      btn.classList.toggle("active", btn.dataset.lang === lang);
+      const active = btn.dataset.lang === lang;
+      btn.classList.toggle("active", active);
     });
 
     try {
@@ -44,16 +27,18 @@
     let lang = "zh";
     try {
       const stored = localStorage.getItem(LANG_KEY);
-      if (stored === "en" || stored === "zh") lang = stored;
+      if (stored === "zh" || stored === "en") {
+        lang = stored;
+      }
     } catch (_) {}
 
     const btns = document.querySelectorAll(".lang-btn");
     btns.forEach(btn => {
       btn.addEventListener("click", () => {
-        applyLang(btn.dataset.lang);
+        setLang(btn.dataset.lang);
       });
     });
 
-    applyLang(lang);
+    setLang(lang);
   });
 })();
