@@ -2,306 +2,252 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <title>EICPS | Modeling and Simulation of Embodied Intelligent Cyber-Physical Systems</title>
+  <title>BIT-IUSEPN Lab | 北京理工大学智能无人系统具身感知与导航实验室</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="EICPS: Modeling and Simulation of Embodied Intelligent Cyber-Physical Systems, including ℙ–ℰ–Φ framework, HNN + CBF + PDT safety interface, and USV case study."
-  />
+  <meta name="description" content="BIT-IUSEPN Lab · Embodied Intelligence, Unmanned Systems, and Intelligent Signal Processing Lab at Beijing Institute of Technology." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="lang-zh">
+<body>
   <!-- 顶部导航 -->
   <header class="site-header">
     <div class="container nav-container">
       <div class="logo">
-        <span class="logo-title">EICPS</span>
-        <span class="logo-sub lang-zh">具身智能信息物理系统建模与仿真</span>
-        <span class="logo-sub lang-en">Modeling and Simulation of Embodied Intelligent Cyber-Physical Systems</span>
+        <span class="logo-main">BIT-IUSEPN Lab</span>
+        <span class="logo-sub lang-zh">北理工 · 智能无人系统具身感知与导航实验室</span>
+        <span class="logo-sub lang-en">Intelligent Unmanned Systems & Embodied Perception–Navigation Lab</span>
       </div>
 
       <nav class="main-nav">
         <a href="#home" class="nav-link lang-zh">首页</a>
         <a href="#home" class="nav-link lang-en">Home</a>
 
-        <a href="#theory" class="nav-link lang-zh">理论框架</a>
-        <a href="#theory" class="nav-link lang-en">Theory</a>
+        <a href="#research" class="nav-link lang-zh">研究方向</a>
+        <a href="#research" class="nav-link lang-en">Research</a>
 
-        <a href="#software" class="nav-link lang-zh">软件实现</a>
-        <a href="#software" class="nav-link lang-en">Software</a>
-
-        <a href="#applications" class="nav-link lang-zh">实验与案例</a>
-        <a href="#applications" class="nav-link lang-en">Experiments</a>
+        <a href="#projects" class="nav-link lang-zh">项目</a>
+        <a href="#projects" class="nav-link lang-en">Projects</a>
 
         <a href="#publications" class="nav-link lang-zh">论文</a>
         <a href="#publications" class="nav-link lang-en">Publications</a>
 
-        <a href="#contact" class="nav-link lang-zh">联系</a>
+        <a href="#people" class="nav-link lang-zh">团队</a>
+        <a href="#people" class="nav-link lang-en">People</a>
+
+        <a href="#contact" class="nav-link lang-zh">联系我们</a>
         <a href="#contact" class="nav-link lang-en">Contact</a>
       </nav>
 
       <div class="lang-switch">
         <button class="lang-btn" data-lang="zh">中文</button>
-        <span class="lang-divider">/</span>
+        <span class="lang-divider">|</span>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="section hero">
+  <!-- Hero / 首页 -->
+  <section id="home" class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
         <h1 class="hero-title lang-zh">
-          EICPS：具身智能信息物理系统建模与仿真
+          具身智能 × 无人系统 × 复杂信号处理
         </h1>
         <h1 class="hero-title lang-en">
-          EICPS: Modeling and Simulation of Embodied Intelligent Cyber-Physical Systems
+          Embodied Intelligence × Unmanned Systems × Intelligent Signal Processing
         </h1>
 
-        <p class="hero-lead lang-zh">
-          本项目面向 <strong>智能无人艇（USV）等具身智能无人系统</strong>，提出 ℙ–ℰ–Φ 统一框架与
-          <strong>Hamiltonian 神经网络 (HNN) + 控制屏障函数 (CBF) + PDT</strong> 数学安全接口，
-          打通从 <em>任务建模 → 物理建模 → 安全控制 → 实船验证</em> 的全流程。
+        <p class="hero-subtitle lang-zh">
+          面向海洋、电网、航天、医疗等关键场景，构建从
+          <b>任务建模 → 仿真训练 → 安全控制 → 实际部署</b>
+          的具身智能信息物理系统（EICPS）。
         </p>
-        <p class="hero-lead lang-en">
-          This project targets <strong>intelligent unmanned surface vessels (USVs)</strong> and related
-          embodied unmanned systems. It proposes a unified <strong>ℙ–ℰ–Φ framework</strong> together
-          with a <strong>Hamiltonian Neural Network (HNN) + Control Barrier Function (CBF) + PDT</strong>
-          based mathematical safety interface, enabling a full pipeline from
-          <em>task modeling → physical modeling → safe control → real-world verification</em>.
+        <p class="hero-subtitle lang-en">
+          We build next-generation Embodied Intelligent Cyber-Physical Systems (EICPS),
+          enabling unmanned systems to go from
+          <b>task modeling → simulation & training → safe control → real-world deployment</b>
+          in maritime, power grid, aerospace, and healthcare scenarios.
         </p>
+
+        <div class="hero-actions">
+          <a href="#research" class="btn primary lang-zh">了解研究方向</a>
+          <a href="#research" class="btn primary lang-en">Explore Research</a>
+
+          <a href="#contact" class="btn outline lang-zh">加入实验室</a>
+          <a href="#contact" class="btn outline lang-en">Join the Lab</a>
+        </div>
 
         <div class="hero-meta">
-          <span class="meta-item">ℙ–ℰ–Φ Framework</span>
-          <span class="meta-item">HNN · CBF · PDT</span>
-          <span class="meta-item">USV Case Study</span>
+          <span>📍 Beijing Institute of Technology</span>
+          <span>⚙️ EICPS · USV · SLAM · HNN · CBF · RL</span>
         </div>
       </div>
 
-      <aside class="hero-aside">
-        <div class="hero-card">
-          <div class="hero-label lang-zh">项目概览</div>
-          <div class="hero-label lang-en">Project at a Glance</div>
+      <div class="hero-card">
+        <div class="hero-badge">EICPS · ℙ-ℰ-Φ</div>
+        <h3 class="lang-zh">具身空间仿真社区平台</h3>
+        <h3 class="lang-en">Embodied Space Simulation Community</h3>
 
-          <ul class="hero-list lang-zh">
-            <li>ℙ：从条令到任务的结构化建模</li>
-            <li>ℰ：具身空间中的物理–环境–约束建模</li>
-            <li>Φ：HNN + CBF + PDT 数学安全接口</li>
-            <li>USV：基于 Modelica/MWORKS 的实船案例</li>
+        <ul class="hero-list lang-zh">
+          <li>🌊 智能无人艇导航与避碰</li>
+          <li>⚡ 电网机器人巡检与作业条令建模</li>
+          <li>🛰 航天发射场无人系统具身空间</li>
+          <li>🏥 手术器械机器人具身接口 Φ</li>
+        </ul>
+        <ul class="hero-list lang-en">
+          <li>🌊 Intelligent USV navigation & collision avoidance</li>
+          <li>⚡ Power-grid inspection robots & operation doctrine modeling</li>
+          <li>🛰 Launch-site unmanned systems embodied space</li>
+          <li>🏥 Surgical scrub-assistant robots & embodied interface Φ</li>
+        </ul>
+
+        <div class="hero-links">
+          <a href="http://123.57.131.21/ai/" target="_blank" class="hero-link">
+            🌐 在线仿真平台 / Online Simulation
+          </a>
+          <a href="https://spaitlab.github.io/BIT-USUN-Lab/" target="_blank" class="hero-link">
+            📁 USUN Lab 页面 / USUN Lab Page
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="section">
+    <div class="container">
+      <h2 class="section-title lang-zh">🔬 研究方向</h2>
+      <h2 class="section-title lang-en">🔬 Research Directions</h2>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="lang-zh">1. 具身智能信息物理系统（EICPS）</h3>
+          <h3 class="lang-en">1. Embodied Intelligent Cyber-Physical Systems (EICPS)</h3>
+          <ul class="lang-zh">
+            <li>具身空间 ℰ 与任务建模 ℙ，具身接口 Φ 三元结构</li>
+            <li>ETL / ESML 任务建模语言与解释器</li>
+            <li>Hamiltonian Neural Networks（HNN）保障动力学一致性</li>
+            <li>CBF + PDT 统一安全控制与“皮层–脊髓”结构</li>
           </ul>
-          <ul class="hero-list lang-en">
-            <li>ℙ: Doctrine- and task-level structured modeling</li>
-            <li>ℰ: Embodied space with physical–environmental constraints</li>
-            <li>Φ: HNN + CBF + PDT as a mathematical safety interface</li>
-            <li>USV: Modelica/MWORKS-based real vessel case study</li>
+          <ul class="lang-en">
+            <li>ℙ–ℰ–Φ triad: task, embodied space, safety interface</li>
+            <li>ETL / ESML task modeling languages & interpreters</li>
+            <li>HNN for structure-preserving dynamics learning</li>
+            <li>Unified safety control with CBF + PDT (“cortex–spinal cord”)</li>
           </ul>
-
-          <div class="hero-links">
-            <a href="#theory" class="hero-link lang-zh">→ 查看 EICPS 理论框架</a>
-            <a href="#theory" class="hero-link lang-en">→ See the EICPS theoretical framework</a>
-            <a href="#publications" class="hero-link">→ Publications &amp; BibTeX</a>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- Theory -->
-  <section id="theory" class="section">
-    <div class="container">
-      <h2 class="section-title lang-zh">一、EICPS 理论框架</h2>
-      <h2 class="section-title lang-en">I. EICPS Theoretical Framework</h2>
-
-      <div class="grid grid-2">
-        <div class="card">
-          <h3 class="lang-zh">1. ℙ–ℰ–Φ 三元组</h3>
-          <h3 class="lang-en">1. ℙ–ℰ–Φ Triplet</h3>
-          <p class="lang-zh">
-            ℙ 表示 <strong>建模过程（Problem / Process）</strong>，ℰ 表示 <strong>具身空间（Embodied Space）</strong>，
-            Φ 表示 <strong>数学安全接口（Safety Interface）</strong>。EICPS 将传统 CPS 控制、
-            具身智能与条令化任务表达统一在同一数学与工程框架中。
-          </p>
-          <p class="lang-en">
-            ℙ denotes the <strong>modeling process / problem formulation</strong>, ℰ the
-            <strong>embodied space</strong>, and Φ the
-            <strong>mathematical safety interface</strong>. EICPS unifies classical CPS control,
-            embodied intelligence, and doctrine-like task descriptions within a single framework.
-          </p>
         </div>
 
         <div class="card">
-          <h3 class="lang-zh">2. HNN + CBF + PDT 数学安全接口</h3>
-          <h3 class="lang-en">2. HNN + CBF + PDT Safety Interface</h3>
-          <p class="lang-zh">
-            HNN 学习保持结构的系统动力学，CBF 刻画安全域与约束集，PDT 提供时间一致性的决策调度。
-            三者级联构成 Φ 接口，使大模型 / RL 控制器在物理上可验证、在工程上可部署。
-          </p>
-          <p class="lang-en">
-            HNN learns structure-preserving dynamics, CBF encodes safety sets and constraints,
-            and PDT provides time-consistent decision scheduling. Cascaded together as Φ,
-            they project AI or RL controllers into physically verifiable and deployable actions.
-          </p>
+          <h3 class="lang-zh">2. 智能无人系统与仿真-现实迁移</h3>
+          <h3 class="lang-en">2. Intelligent Unmanned Systems & Sim-to-Real</h3>
+          <ul class="lang-zh">
+            <li>智能无人艇（USV）导航、避碰与任务规划</li>
+            <li>变电站、海洋牧场等多场景具身空间建模</li>
+            <li>Unity / MWORKS / ROS2 等虚实融合仿真</li>
+            <li>多无人系统协同与行为评测</li>
+          </ul>
+          <ul class="lang-en">
+            <li>USV navigation, collision avoidance, and mission planning</li>
+            <li>Embodied spaces for substations, marine ranches, etc.</li>
+            <li>Hybrid-reality simulation with Unity / MWORKS / ROS2</li>
+            <li>Multi-agent coordination & behavior evaluation</li>
+          </ul>
         </div>
 
         <div class="card">
-          <h3 class="lang-zh">3. 具身空间 ℰ：从状态空间到任务空间</h3>
-          <h3 class="lang-en">3. Embodied Space ℰ: From State Space to Task Space</h3>
-          <p class="lang-zh">
-            具身空间不仅包含系统状态，还显式编码任务约束、环境结构与条令规则，
-            为仿真训练、安全验证与行为评估提供统一载体。
-          </p>
-          <p class="lang-en">
-            The embodied space ℰ extends classical state space by explicitly encoding task
-            constraints, environmental structure, and doctrine rules, serving as a unified
-            carrier for simulation, safety verification, and behavior evaluation.
-          </p>
+          <h3 class="lang-zh">3. 复杂信号处理与智能控制</h3>
+          <h3 class="lang-en">3. Complex Signal Processing & Intelligent Control</h3>
+          <ul class="lang-zh">
+            <li>随机信号与统计信号处理</li>
+            <li>图像 / 雷达 / 激光 / 声学多模态融合</li>
+            <li>深度学习与强化学习在信号与控制中的应用</li>
+            <li>安全强化学习（Safe RL）与结构化评估</li>
+          </ul>
+          <ul class="lang-en">
+            <li>Random and statistical signal processing</li>
+            <li>Multimodal fusion: vision, radar, LiDAR, acoustics</li>
+            <li>DL & RL for control and perception</li>
+            <li>Safe RL and structured performance evaluation</li>
+          </ul>
         </div>
 
         <div class="card">
-          <h3 class="lang-zh">4. “皮层–脊髓”双层结构</h3>
-          <h3 class="lang-en">4. “Cortex–Spinal” Dual-Layer Structure</h3>
-          <p class="lang-zh">
-            上层 AI 控制器（RL / LLM / World Model）负责高层意图与策略；
-            下层 EICPS–Φ 负责毫秒级安全反射与物理一致性控制，
-            形成人工智能时代的“数字脊髓”。
-          </p>
-          <p class="lang-en">
-            Higher-level AI controllers (RL / LLM / world models) handle intent and strategy,
-            while the lower EICPS–Φ layer ensures millisecond-level safety reflex and physical
-            consistency, acting as a “digital spinal cord” for embodied systems.
-          </p>
+          <h3 class="lang-zh">4. 具身接口与人机协同</h3>
+          <h3 class="lang-en">4. Embodied Interfaces & Human–Robot Collaboration</h3>
+          <ul class="lang-zh">
+            <li>具身接口 Φ：从任务语言到物理动作的映射</li>
+            <li>高风险场景下的非语义通感与意图推断</li>
+            <li>手术器械辅助机器人、巡检机器人协同</li>
+            <li>“文言表象 + 白话解释 + 推荐动作”接口范式</li>
+          </ul>
+          <ul class="lang-en">
+            <li>Embodied interface Φ: mapping tasks to safe actions</li>
+            <li>Non-semantic synesthesia & intent inference in risky scenarios</li>
+            <li>Scrub-assistant & inspection robots</li>
+            <li>“Classic text + plain explanation + recommended actions” paradigm</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Software -->
-  <section id="software" class="section section-alt">
+  <!-- Projects -->
+  <section id="projects" class="section section-alt">
     <div class="container">
-      <h2 class="section-title lang-zh">二、EICPS–MSI 软件实现</h2>
-      <h2 class="section-title lang-en">II. EICPS–MSI Software Implementation</h2>
+      <h2 class="section-title lang-zh">🧩 代表性项目</h2>
+      <h2 class="section-title lang-en">🧩 Representative Projects</h2>
 
       <div class="grid grid-2">
         <div class="card">
-          <h3 class="lang-zh">1. Modelica/MWORKS 物理建模</h3>
-          <h3 class="lang-en">1. Physical Modeling with Modelica/MWORKS</h3>
+          <h3 class="lang-zh">USV–EICPS 智能无人艇具身智能系统</h3>
+          <h3 class="lang-en">USV–EICPS: Intelligent Unmanned Surface Vessel</h3>
           <p class="lang-zh">
-            基于 MWORKS 平台构建无人艇船体、水动力学、执行机构等物理模型，形成可复用的
-            Modelica 组件库，为 EICPS 动力学建模提供工程基础。
+            以智能无人艇为载体，构建完整 ℙ–ℰ–Φ 流程：从需求分解、具身空间仿真到控制器部署与实船测试，
+            为厦门电网海缆检测等项目提供工程支撑。
           </p>
           <p class="lang-en">
-            Physical models of USV hulls, hydrodynamics, and actuators are built on the
-            MWORKS/Modelica platform, forming reusable component libraries that ground the
-            EICPS dynamic modeling in real engineering practice.
+            A full ℙ–ℰ–Φ pipeline on USVs, from requirements and embodied-space
+            simulation to controller deployment and sea trials, supporting
+            real-world subsea-cable inspection projects.
           </p>
         </div>
 
         <div class="card">
-          <h3 class="lang-zh">2. HNN/CBF/PDT 模块化接口</h3>
-          <h3 class="lang-en">2. Modular HNN/CBF/PDT Interfaces</h3>
+          <h3 class="lang-zh">电网运维与变电站巡检具身空间</h3>
+          <h3 class="lang-en">Power-Grid O&M & Substation Inspection</h3>
           <p class="lang-zh">
-            将 HNN、CBF 与 PDT 封装为统一 Φ 接口模块，可与现有控制器无缝对接，
-            支持 C++/Python 等多语言实现，适配在线仿真与现场部署。
+            围绕架空线路与变电站巡检机器人，构建作业条令–任务–场景库，
+            支持机器人具身训练、安全控制与作业行为评估。
           </p>
           <p class="lang-en">
-            HNN, CBF, and PDT are encapsulated as a unified Φ interface module, which
-            plugs into existing controllers and supports C++/Python implementations for
-            both online simulation and field deployment.
+            Embodied spaces for power-grid inspection robots, combining
+            doctrine–task–scenario libraries with safe training and behavior evaluation.
           </p>
         </div>
 
         <div class="card">
-          <h3 class="lang-zh">3. 条令–任务–场景库</h3>
-          <h3 class="lang-en">3. Doctrine–Task–Scenario Library</h3>
+          <h3 class="lang-zh">航天发射场无人系统具身空间</h3>
+          <h3 class="lang-en">Launch-Site Unmanned Systems</h3>
           <p class="lang-zh">
-            通过 ETL/ESML 语言对条令、任务与场景进行结构化描述，构建可复用的任务库，
-            支持多类型无人系统在统一具身空间中的训练与评测。
+            面向火箭发射场的无人机、无人车与机器人协同巡检任务，构建“人–机–箭–环”
+            一体化具身空间与形式化安全控制框架。
           </p>
           <p class="lang-en">
-            ETL/ESML languages describe doctrines, tasks, and scenarios in a structured way,
-            forming reusable task libraries that support training and evaluation of various
-            unmanned systems in a common embodied space.
+            Embodied spaces and safety frameworks for UAVs, UGVs, and robots at
+            launch sites, modeling the human–machine–rocket–environment loop.
           </p>
         </div>
 
         <div class="card">
-          <h3 class="lang-zh">4. USV–EICPS 教学与实验平台</h3>
-          <h3 class="lang-en">4. USV–EICPS Teaching & Experiment Platform</h3>
+          <h3 class="lang-zh">智慧医院与手术器械机器人具身接口</h3>
+          <h3 class="lang-en">Smart Hospital & Surgical Embodied Interfaces</h3>
           <p class="lang-zh">
-            以智能无人艇为核心案例，构建教学与科研一体化平台，
-            从理论推导、代码实现到仿真与实船试验，形成可复用的课程与实验资源。
+            以手术器械辅助机器人为载体，研究手术进程理解、非语义通感与具身接口 Φ，
+            探索医生–护士–机器人三方协同机制。
           </p>
           <p class="lang-en">
-            Using intelligent USVs as a core case, EICPS provides an integrated teaching and
-            research platform, covering theory, implementation, simulation, and sea trials,
-            and producing reusable course and lab materials.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Applications -->
-  <section id="applications" class="section">
-    <div class="container">
-      <h2 class="section-title lang-zh">三、实验与应用案例</h2>
-      <h2 class="section-title lang-en">III. Experiments & Applications</h2>
-
-      <div class="grid grid-2">
-        <div class="card">
-          <h3 class="lang-zh">1. 智能无人艇海缆检测</h3>
-          <h3 class="lang-en">1. Intelligent USV for Subsea Cable Inspection</h3>
-          <p class="lang-zh">
-            在复杂海况与港口环境下，对海底电缆开展自主巡检任务。
-            USV–EICPS 框架实现了从任务建模、路径规划、安全控制到实船测试的闭环。
-          </p>
-          <p class="lang-en">
-            Autonomous cable inspection missions are conducted under complex sea states and
-            harbor conditions. The USV–EICPS framework closes the loop from task modeling
-            and path planning to safety control and real-vessel experiments.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3 class="lang-zh">2. 复杂环境中的避碰与回避动作</h3>
-          <h3 class="lang-en">2. Collision Avoidance in Complex Environments</h3>
-          <p class="lang-zh">
-            针对窄水道、港区交汇等复杂场景，利用 CBF + PDT 实现对大模型 / RL 控制器输出的
-            安全投影，保证满足 COLREGs 及工程安全约束。
-          </p>
-          <p class="lang-en">
-            For narrow channels and congested harbor scenarios, CBF + PDT is used to
-            safely project AI/RL controller outputs while respecting COLREGs and
-            engineering safety constraints.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3 class="lang-zh">3. 虚实融合仿真对比实验</h3>
-          <h3 class="lang-en">3. Hybrid-Reality Simulation Studies</h3>
-          <p class="lang-zh">
-            在虚拟场景中快速迭代策略，并与实船试验数据进行对比，分析 EICPS 安全接口对
-            轨迹质量、控制稳定性与安全裕度的影响。
-          </p>
-          <p class="lang-en">
-            Policies are rapidly iterated in virtual environments and compared against
-            real-ship data, analyzing how the EICPS safety interface affects trajectory
-            quality, control stability, and safety margins.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3 class="lang-zh">4. 安全消融实验</h3>
-          <h3 class="lang-en">4. Safety Ablation Studies</h3>
-          <p class="lang-zh">
-            对比 “无 CBF / 无 HNN / 无 PDT” 等多种配置，定量评估各模块对碰撞率、
-            安全约束违例次数与控制输入平滑性的贡献。
-          </p>
-          <p class="lang-en">
-            Configurations such as “no CBF / no HNN / no PDT” are compared to quantify each
-            component’s contribution to collision rate, safety-constraint violations, and
-            control smoothness.
+            Studying surgical-workflow understanding and embodied interface Φ for
+            scrub-assistant robots, targeting tri-party collaboration among
+            surgeons, nurses, and robots.
           </p>
         </div>
       </div>
@@ -309,156 +255,118 @@
   </section>
 
   <!-- Publications -->
-  <section id="publications" class="section section-alt">
+  <section id="publications" class="section">
     <div class="container">
-      <h2 class="section-title lang-zh">四、Top 10 代表论文</h2>
-      <h2 class="section-title lang-en">IV. Top 10 Representative Publications</h2>
+      <h2 class="section-title lang-zh">📚 代表论文</h2>
+      <h2 class="section-title lang-en">📚 Selected Publications</h2>
 
       <ul class="pub-list">
         <li>
           <span class="pub-year">2025</span>
-          <p class="lang-en">
-            [1] Zhiguo Zhou,
-            <em>Simulation of Embodied Cyber Physical System Based on Modelica/MWORKS:
-            A Case Study of Intelligent Unmanned Surface Vessel</em>, in
-            <strong>16th International Modelica Conference</strong>, 2025. (Oral)
-          </p>
-          <p class="lang-zh">
-            [1] 周治国，《Simulation of Embodied Cyber Physical System Based on Modelica/MWORKS:
-            A Case Study of Intelligent Unmanned Surface Vessel》，Modelica 2025 国际会议，全会口头报告。
-          </p>
+          <span class="lang-en">
+            Z. Zhou, <em>Simulation of Embodied Cyber Physical System Based on Modelica/MWORKS:
+            A Case Study of Intelligent Unmanned Surface Vessel</em>, 16th International
+            Modelica Conference, 2025. (Oral)
+          </span>
+          <span class="lang-zh">
+            周治国，<em>Simulation of Embodied Cyber Physical System Based on Modelica/MWORKS:
+            A Case Study of Intelligent Unmanned Surface Vessel</em>，Modelica 2025 国际会议，全会口头报告。
+          </span>
         </li>
-
         <li>
           <span class="pub-year">2023</span>
-          <p class="lang-en">
-            [2] Zhiguo Zhou,
-            <em>语义信息增强的 3D 激光 SLAM 技术进展</em>,
-            <strong>Journal of Instrumentation (仪器仪表学报)</strong>, 2023.
-          </p>
-          <p class="lang-zh">
-            [2] 周治国，《语义信息增强的 3D 激光 SLAM 技术进展》，《仪器仪表学报》，2023。
-          </p>
+          <span class="lang-zh">
+            周治国，《语义信息增强的 3D 激光 SLAM 技术进展》，仪器仪表学报，2023。
+          </span>
         </li>
-
         <li>
           <span class="pub-year">2021</span>
-          <p class="lang-en">
-            [3] Zhiguo Zhou,
-            <em>3D 激光雷达 SLAM 算法综述</em>,
-            <strong>Journal of Instrumentation (仪器仪表学报)</strong>, 2021.
-          </p>
-          <p class="lang-zh">
-            [3] 周治国，《3D 激光雷达 SLAM 算法综述》，《仪器仪表学报》，2021。
-          </p>
-        </li>
-
-        <!-- 占位：你可以从 Google Scholar 选 7 篇代表作填入 -->
-        <li>
-          <span class="pub-year">20XX</span>
-          <p class="lang-en">[4] Author(s), <em>Title</em>, <strong>Journal / Conference</strong>, Year.</p>
-          <p class="lang-zh">[4] 作者等，《中文标题》，期刊 / 会议名，年份。</p>
-        </li>
-        <li>
-          <span class="pub-year">20XX</span>
-          <p class="lang-en">[5] ...</p>
-          <p class="lang-zh">[5] ...</p>
-        </li>
-        <li>
-          <span class="pub-year">20XX</span>
-          <p class="lang-en">[6] ...</p>
-          <p class="lang-zh">[6] ...</p>
-        </li>
-        <li>
-          <span class="pub-year">20XX</span>
-          <p class="lang-en">[7] ...</p>
-          <p class="lang-zh">[7] ...</p>
-        </li>
-        <li>
-          <span class="pub-year">20XX</span>
-          <p class="lang-en">[8] ...</p>
-          <p class="lang-zh">[8] ...</p>
-        </li>
-        <li>
-          <span class="pub-year">20XX</span>
-          <p class="lang-en">[9] ...</p>
-          <p class="lang-zh">[9] ...</p>
-        </li>
-        <li>
-          <span class="pub-year">20XX</span>
-          <p class="lang-en">[10] ...</p>
-          <p class="lang-zh">[10] ...</p>
+          <span class="lang-zh">
+            周治国，《3D 激光雷达 SLAM 算法综述》，仪器仪表学报，2021。
+          </span>
         </li>
       </ul>
 
-      <p class="pub-more lang-zh">
-        更多论文请见：<br />
-        🔗 Google Scholar：
-        <a href="https://scholar.google.com/citations?hl=en&user=vMLtpZYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
-          https://scholar.google.com/citations?user=vMLtpZYAAAAJ
-        </a><br />
-        🔗 ResearchGate：
-        <a href="https://www.researchgate.net/profile/Zhiguo-Zhou-2?ev=hdr_xprf" target="_blank">
-          Zhiguo Zhou on ResearchGate
-        </a>
+      <p class="lang-zh pub-more">
+        更多论文请见：可在此添加 Google Scholar / ORCID / 校内主页链接。
       </p>
-      <p class="pub-more lang-en">
-        For a full and up-to-date list of publications, please visit:<br />
-        🔗 Google Scholar:
-        <a href="https://scholar.google.com/citations?hl=en&user=vMLtpZYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
-          https://scholar.google.com/citations?user=vMLtpZYAAAAJ
-        </a><br />
-        🔗 ResearchGate:
-        <a href="https://www.researchgate.net/profile/Zhiguo-Zhou-2?ev=hdr_xprf" target="_blank">
-          Zhiguo Zhou on ResearchGate
-        </a>
+      <p class="lang-en pub-more">
+        More publications: you may link Google Scholar / ORCID / institutional profile here.
       </p>
+    </div>
+  </section>
+
+  <!-- People -->
+  <section id="people" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title lang-zh">👥 团队成员</h2>
+      <h2 class="section-title lang-en">👥 People</h2>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="lang-zh">负责人 / PI</h3>
+          <h3 class="lang-en">Principal Investigator</h3>
+          <p class="lang-zh">
+            周治国 副教授，北京理工大学。研究方向包括具身智能信息物理系统（EICPS）、智能无人系统、
+            复杂信号处理与仿真-现实迁移等。
+          </p>
+          <p class="lang-en">
+            Assoc. Prof. Zhiguo Zhou, Beijing Institute of Technology. His research interests
+            include EICPS, embodied intelligence, intelligent unmanned systems, complex signal
+            processing, and sim-to-real training.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="lang-zh">学生与合作者</h3>
+          <h3 class="lang-en">Students & Collaborators</h3>
+          <p class="lang-zh">
+            实验室包含多名博士、硕士研究生及本科科研助理，并与电网、船舶、航天、医疗等行业合作伙伴
+            共建具身智能应用场景。
+          </p>
+          <p class="lang-en">
+            The lab hosts PhD candidates, master students, and undergraduate researchers, and
+            collaborates with partners from power grid, maritime, aerospace, and healthcare sectors.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact -->
   <section id="contact" class="section">
     <div class="container">
-      <h2 class="section-title lang-zh">五、联系与合作</h2>
-      <h2 class="section-title lang-en">V. Contact & Collaboration</h2>
+      <h2 class="section-title lang-zh">📬 加入与联系</h2>
+      <h2 class="section-title lang-en">📬 Join & Contact</h2>
 
       <div class="grid grid-2">
         <div>
           <p class="lang-zh">
-            如果你对以下方向感兴趣，欢迎交流或合作：
+            我们长期欢迎对以下方向感兴趣的同学与合作伙伴：
           </p>
           <p class="lang-en">
-            We are happy to discuss and collaborate on:
+            We welcome students and collaborators interested in:
           </p>
 
           <ul class="lang-zh">
-            <li>具身智能信息物理系统（EICPS）理论与软件实现</li>
-            <li>智能无人艇 / 无人系统的安全控制与仿真</li>
-            <li>HNN / CBF / PDT 数学安全接口与大模型控制</li>
+            <li>具身智能 / EICPS / 具身空间建模</li>
+            <li>智能无人艇、巡检机器人与仿真训练平台</li>
+            <li>复杂信号处理、深度学习与强化学习控制</li>
           </ul>
           <ul class="lang-en">
-            <li>Theory and software implementation of EICPS</li>
-            <li>Safe control and simulation of USVs and other unmanned systems</li>
-            <li>HNN / CBF / PDT based safety interfaces for large-model control</li>
+            <li>Embodied intelligence / EICPS / embodied space modeling</li>
+            <li>USVs, inspection robots, and simulation platforms</li>
+            <li>Complex signal processing, DL & RL for control</li>
           </ul>
         </div>
 
-        <div class="contact-card">
+        <div class="contact-box">
           <p>📍 Beijing Institute of Technology</p>
-          <p class="lang-zh">🏫 北京市海淀区中关村南大街 5 号</p>
-          <p class="lang-en">🏫 5 Zhongguancun South Street, Haidian, Beijing</p>
+          <p class="lang-zh">🏫 北京市海淀区中关村南大街 5 号（具体楼宇与房间号可在此补充）</p>
+          <p class="lang-en">🏫 5 Zhongguancun South St., Haidian, Beijing (details to be added)</p>
           <p>✉️ Email: <span class="contact-email">your-email@bit.edu.cn</span></p>
-          <p>🐙 GitHub: <a href="https://github.com/spaitlab/EICPS" target="_blank">spaitlab/EICPS</a></p>
-          <p>📖 Google Scholar:
-            <a href="https://scholar.google.com/citations?hl=en&user=vMLtpZYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
-              Zhiguo Zhou
-            </a>
-          </p>
-          <p>📘 ResearchGate:
-            <a href="https://www.researchgate.net/profile/Zhiguo-Zhou-2?ev=hdr_xprf" target="_blank">
-              Zhiguo Zhou
-            </a>
-          </p>
+          <p>🐙 GitHub: <a href="https://github.com/spaitlab" target="_blank">spaitlab</a></p>
+          <p>🌐 Lab Pages: <a href="https://spaitlab.github.io/BIT-IUSEPN-Lab/" target="_blank">BIT-IUSEPN-Lab</a></p>
         </div>
       </div>
     </div>
@@ -466,7 +374,9 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>© 2025 EICPS · Modeling and Simulation of Embodied Intelligent Cyber-Physical Systems</span>
+      <span>© 2025 BIT-IUSEPN Lab · Beijing Institute of Technology</span>
+      <span class="lang-zh">具身智能 · 无人系统 · 复杂信号处理</span>
+      <span class="lang-en">Embodied Intelligence · Unmanned Systems · Signal Processing</span>
     </div>
   </footer>
 
