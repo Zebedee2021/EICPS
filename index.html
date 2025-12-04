@@ -169,4 +169,307 @@
           <p class="lang-en">
             Higher-level AI controllers (RL / LLM / world models) handle intent and strategy,
             while the lower EICPS–Φ layer ensures millisecond-level safety reflex and physical
-            consistency, acting as a “digital spinal cord” for embodie
+            consistency, acting as a “digital spinal cord” for embodied systems.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Software -->
+  <section id="software" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title lang-zh">二、EICPS–MSI 软件实现</h2>
+      <h2 class="section-title lang-en">II. EICPS–MSI Software Implementation</h2>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="lang-zh">1. Modelica/MWORKS 物理建模</h3>
+          <h3 class="lang-en">1. Physical Modeling with Modelica/MWORKS</h3>
+          <p class="lang-zh">
+            基于 MWORKS 平台构建无人艇船体、水动力学、执行机构等物理模型，形成可复用的
+            Modelica 组件库，为 EICPS 动力学建模提供工程基础。
+          </p>
+          <p class="lang-en">
+            Physical models of USV hulls, hydrodynamics, and actuators are built on the
+            MWORKS/Modelica platform, forming reusable component libraries that ground the
+            EICPS dynamic modeling in real engineering practice.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="lang-zh">2. HNN/CBF/PDT 模块化接口</h3>
+          <h3 class="lang-en">2. Modular HNN/CBF/PDT Interfaces</h3>
+          <p class="lang-zh">
+            将 HNN、CBF 与 PDT 封装为统一 Φ 接口模块，可与现有控制器无缝对接，
+            支持 C++/Python 等多语言实现，适配在线仿真与现场部署。
+          </p>
+          <p class="lang-en">
+            HNN, CBF, and PDT are encapsulated as a unified Φ interface module, which
+            plugs into existing controllers and supports C++/Python implementations for
+            both online simulation and field deployment.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="lang-zh">3. 条令–任务–场景库</h3>
+          <h3 class="lang-en">3. Doctrine–Task–Scenario Library</h3>
+          <p class="lang-zh">
+            通过 ETL/ESML 语言对条令、任务与场景进行结构化描述，构建可复用的任务库，
+            支持多类型无人系统在统一具身空间中的训练与评测。
+          </p>
+          <p class="lang-en">
+            ETL/ESML languages describe doctrines, tasks, and scenarios in a structured way,
+            forming reusable task libraries that support training and evaluation of various
+            unmanned systems in a common embodied space.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="lang-zh">4. USV–EICPS 教学与实验平台</h3>
+          <h3 class="lang-en">4. USV–EICPS Teaching & Experiment Platform</h3>
+          <p class="lang-zh">
+            以智能无人艇为核心案例，构建教学与科研一体化平台，
+            从理论推导、代码实现到仿真与实船试验，形成可复用的课程与实验资源。
+          </p>
+          <p class="lang-en">
+            Using intelligent USVs as a core case, EICPS provides an integrated teaching and
+            research platform, covering theory, implementation, simulation, and sea trials,
+            and producing reusable course and lab materials.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section id="applications" class="section">
+    <div class="container">
+      <h2 class="section-title lang-zh">三、实验与应用案例</h2>
+      <h2 class="section-title lang-en">III. Experiments & Applications</h2>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="lang-zh">1. 智能无人艇海缆检测</h3>
+          <h3 class="lang-en">1. Intelligent USV for Subsea Cable Inspection</h3>
+          <p class="lang-zh">
+            在复杂海况与港口环境下，对海底电缆开展自主巡检任务。
+            USV–EICPS 框架实现了从任务建模、路径规划、安全控制到实船测试的闭环。
+          </p>
+          <p class="lang-en">
+            Autonomous cable inspection missions are conducted under complex sea states and
+            harbor conditions. The USV–EICPS framework closes the loop from task modeling
+            and path planning to safety control and real-vessel experiments.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="lang-zh">2. 复杂环境中的避碰与回避动作</h3>
+          <h3 class="lang-en">2. Collision Avoidance in Complex Environments</h3>
+          <p class="lang-zh">
+            针对窄水道、港区交汇等复杂场景，利用 CBF + PDT 实现对大模型 / RL 控制器输出的
+            安全投影，保证满足 COLREGs 及工程安全约束。
+          </p>
+          <p class="lang-en">
+            For narrow channels and congested harbor scenarios, CBF + PDT is used to
+            safely project AI/RL controller outputs while respecting COLREGs and
+            engineering safety constraints.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="lang-zh">3. 虚实融合仿真对比实验</h3>
+          <h3 class="lang-en">3. Hybrid-Reality Simulation Studies</h3>
+          <p class="lang-zh">
+            在虚拟场景中快速迭代策略，并与实船试验数据进行对比，分析 EICPS 安全接口对
+            轨迹质量、控制稳定性与安全裕度的影响。
+          </p>
+          <p class="lang-en">
+            Policies are rapidly iterated in virtual environments and compared against
+            real-ship data, analyzing how the EICPS safety interface affects trajectory
+            quality, control stability, and safety margins.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="lang-zh">4. 安全消融实验</h3>
+          <h3 class="lang-en">4. Safety Ablation Studies</h3>
+          <p class="lang-zh">
+            对比 “无 CBF / 无 HNN / 无 PDT” 等多种配置，定量评估各模块对碰撞率、
+            安全约束违例次数与控制输入平滑性的贡献。
+          </p>
+          <p class="lang-en">
+            Configurations such as “no CBF / no HNN / no PDT” are compared to quantify each
+            component’s contribution to collision rate, safety-constraint violations, and
+            control smoothness.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title lang-zh">四、Top 10 代表论文</h2>
+      <h2 class="section-title lang-en">IV. Top 10 Representative Publications</h2>
+
+      <ul class="pub-list">
+        <li>
+          <span class="pub-year">2025</span>
+          <p class="lang-en">
+            [1] Zhiguo Zhou,
+            <em>Simulation of Embodied Cyber Physical System Based on Modelica/MWORKS:
+            A Case Study of Intelligent Unmanned Surface Vessel</em>, in
+            <strong>16th International Modelica Conference</strong>, 2025. (Oral)
+          </p>
+          <p class="lang-zh">
+            [1] 周治国，《Simulation of Embodied Cyber Physical System Based on Modelica/MWORKS:
+            A Case Study of Intelligent Unmanned Surface Vessel》，Modelica 2025 国际会议，全会口头报告。
+          </p>
+        </li>
+
+        <li>
+          <span class="pub-year">2023</span>
+          <p class="lang-en">
+            [2] Zhiguo Zhou,
+            <em>语义信息增强的 3D 激光 SLAM 技术进展</em>,
+            <strong>Journal of Instrumentation (仪器仪表学报)</strong>, 2023.
+          </p>
+          <p class="lang-zh">
+            [2] 周治国，《语义信息增强的 3D 激光 SLAM 技术进展》，《仪器仪表学报》，2023。
+          </p>
+        </li>
+
+        <li>
+          <span class="pub-year">2021</span>
+          <p class="lang-en">
+            [3] Zhiguo Zhou,
+            <em>3D 激光雷达 SLAM 算法综述</em>,
+            <strong>Journal of Instrumentation (仪器仪表学报)</strong>, 2021.
+          </p>
+          <p class="lang-zh">
+            [3] 周治国，《3D 激光雷达 SLAM 算法综述》，《仪器仪表学报》，2021。
+          </p>
+        </li>
+
+        <!-- 占位：你可以从 Google Scholar 选 7 篇代表作填入 -->
+        <li>
+          <span class="pub-year">20XX</span>
+          <p class="lang-en">[4] Author(s), <em>Title</em>, <strong>Journal / Conference</strong>, Year.</p>
+          <p class="lang-zh">[4] 作者等，《中文标题》，期刊 / 会议名，年份。</p>
+        </li>
+        <li>
+          <span class="pub-year">20XX</span>
+          <p class="lang-en">[5] ...</p>
+          <p class="lang-zh">[5] ...</p>
+        </li>
+        <li>
+          <span class="pub-year">20XX</span>
+          <p class="lang-en">[6] ...</p>
+          <p class="lang-zh">[6] ...</p>
+        </li>
+        <li>
+          <span class="pub-year">20XX</span>
+          <p class="lang-en">[7] ...</p>
+          <p class="lang-zh">[7] ...</p>
+        </li>
+        <li>
+          <span class="pub-year">20XX</span>
+          <p class="lang-en">[8] ...</p>
+          <p class="lang-zh">[8] ...</p>
+        </li>
+        <li>
+          <span class="pub-year">20XX</span>
+          <p class="lang-en">[9] ...</p>
+          <p class="lang-zh">[9] ...</p>
+        </li>
+        <li>
+          <span class="pub-year">20XX</span>
+          <p class="lang-en">[10] ...</p>
+          <p class="lang-zh">[10] ...</p>
+        </li>
+      </ul>
+
+      <p class="pub-more lang-zh">
+        更多论文请见：<br />
+        🔗 Google Scholar：
+        <a href="https://scholar.google.com/citations?hl=en&user=vMLtpZYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+          https://scholar.google.com/citations?user=vMLtpZYAAAAJ
+        </a><br />
+        🔗 ResearchGate：
+        <a href="https://www.researchgate.net/profile/Zhiguo-Zhou-2?ev=hdr_xprf" target="_blank">
+          Zhiguo Zhou on ResearchGate
+        </a>
+      </p>
+      <p class="pub-more lang-en">
+        For a full and up-to-date list of publications, please visit:<br />
+        🔗 Google Scholar:
+        <a href="https://scholar.google.com/citations?hl=en&user=vMLtpZYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+          https://scholar.google.com/citations?user=vMLtpZYAAAAJ
+        </a><br />
+        🔗 ResearchGate:
+        <a href="https://www.researchgate.net/profile/Zhiguo-Zhou-2?ev=hdr_xprf" target="_blank">
+          Zhiguo Zhou on ResearchGate
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title lang-zh">五、联系与合作</h2>
+      <h2 class="section-title lang-en">V. Contact & Collaboration</h2>
+
+      <div class="grid grid-2">
+        <div>
+          <p class="lang-zh">
+            如果你对以下方向感兴趣，欢迎交流或合作：
+          </p>
+          <p class="lang-en">
+            We are happy to discuss and collaborate on:
+          </p>
+
+          <ul class="lang-zh">
+            <li>具身智能信息物理系统（EICPS）理论与软件实现</li>
+            <li>智能无人艇 / 无人系统的安全控制与仿真</li>
+            <li>HNN / CBF / PDT 数学安全接口与大模型控制</li>
+          </ul>
+          <ul class="lang-en">
+            <li>Theory and software implementation of EICPS</li>
+            <li>Safe control and simulation of USVs and other unmanned systems</li>
+            <li>HNN / CBF / PDT based safety interfaces for large-model control</li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <p>📍 Beijing Institute of Technology</p>
+          <p class="lang-zh">🏫 北京市海淀区中关村南大街 5 号</p>
+          <p class="lang-en">🏫 5 Zhongguancun South Street, Haidian, Beijing</p>
+          <p>✉️ Email: <span class="contact-email">your-email@bit.edu.cn</span></p>
+          <p>🐙 GitHub: <a href="https://github.com/spaitlab/EICPS" target="_blank">spaitlab/EICPS</a></p>
+          <p>📖 Google Scholar:
+            <a href="https://scholar.google.com/citations?hl=en&user=vMLtpZYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+              Zhiguo Zhou
+            </a>
+          </p>
+          <p>📘 ResearchGate:
+            <a href="https://www.researchgate.net/profile/Zhiguo-Zhou-2?ev=hdr_xprf" target="_blank">
+              Zhiguo Zhou
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2025 EICPS · Modeling and Simulation of Embodied Intelligent Cyber-Physical Systems</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
